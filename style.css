@@ -18,6 +18,47 @@ main {
 }
 main section {
   height: 100%;
-  flex-grow: 1;
-  background: crimson;
+  flex: 1 1 0;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  transition: all 0.7s ease;
+}
+main section div {
+  background: rgba(0, 0, 0, 0.4666666667);
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+main section h1,
+main section p {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main section h1 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+main section:nth-child(1) {
+  background: url(nature1.jpg);
+}
+main section:nth-child(2) {
+  background: url(nature2.jpg);
+}
+main section:nth-child(3) {
+  background: url(nature3.jpg);
+}
+main section:nth-child(4) {
+  background: url(nature4.jpg);
+}
+main section:nth-child(5) {
+  background: url(nature5.jpg);
+}
+main section:hover {
+  flex: 2 1 0;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
