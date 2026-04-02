@@ -1,0 +1,5 @@
+@mixin background-image($n:1, $bg-url: "nature1.jpg") {
+    section:nth-child(#{$n}) {
+        background: url(#{$bg-url});
+    }
+}

@@ -1,3 +1,5 @@
+@import "mixins";
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +11,7 @@ body {
     width: 100%;
     height: 100%;
 }
+
 
 main {
     height: 100%;
@@ -44,32 +47,19 @@ main {
 
         h1 {
             font-weight: 500;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
     }
 
-    section:nth-child(1) {
-        background: url(nature1.jpg);
-    }
-
-    section:nth-child(2) {
-        background: url(nature2.jpg);
-    }
-
-    section:nth-child(3) {
-        background: url(nature3.jpg);
-    }
-
-    section:nth-child(4) {
-        background: url(nature4.jpg);
-    }
-
-    section:nth-child(5) {
-        background: url(nature5.jpg);
-    }
+    @include background-image(1, "nature1.jpg");
+    @include background-image(2, "nature2.jpg");
+    @include background-image(3, "nature3.jpg");
+    @include background-image(4, "nature4.jpg");
+    @include background-image(5, "nature5.jpg");
 
     section:hover {
-        flex:2 1 0;
+        flex: 2 1 0;
         cursor: pointer;
     }
+
 }

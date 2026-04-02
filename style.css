@@ -41,7 +41,7 @@ main section p {
 }
 main section h1 {
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 main section:nth-child(1) {
   background: url(nature1.jpg);
